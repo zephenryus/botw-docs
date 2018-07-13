@@ -11,7 +11,7 @@
 
 ## `grass.extm` File Layout
 
-Each file contains a 64 \times 64 grid. For each vertex there is 4 bytes of data that describe the height of the grass and color.
+Each file contains a 64 &times; 64 grid. For each vertex there is 4 bytes of data that describe the height of the grass and color.
 
 ## Grass Map Data
 

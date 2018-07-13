@@ -11,7 +11,7 @@
 
 ## `water.extm` File Layout
 
-Each file contains a 64 \times 64 grid. For each vertex there is 8 bytes of data that describe the height of the mesh, the material type, the surf opacity and flow speed.
+Each file contains a 64 &times; 64 grid. For each vertex there is 8 bytes of data that describe the height of the mesh, the material type and flow speed.
 
 ## Water Map Data
 
@@ -36,7 +36,7 @@ struct waterData {
 | `0x06` | 1 | Unsigned Byte | `materialIndex` |
 
 
-`height`, `surf` and `flowSpeed` are stored as unsigned shorts, but seem to map to float values. These can be calculated by dividing by the max size of an unsigned short:
+`height` and `flowSpeed` are stored as unsigned shorts, but seem to map to float values. These can be calculated by dividing by the max size of an unsigned short:
 
 ```
 32767 / 0xffff = 0.5
